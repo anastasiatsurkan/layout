@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-bar {
+    height: 68px;
+    background-color: #109ef9;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+}
+
+.navigation-bar ul li {
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation-bar ul li a.active {
+    background-color: #45b9fa;
+
+}
+
+.navigation-bar ul li a {
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.page-header {
+    height: 30%;
+    background-image: url(assets/media/laptop.jpg);
+    background-position: center;
+    
+}
+
+.page-header-overlay {
+    background-color: #0000006b;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.page-header-overlay h1 {
+    color: #389eda;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.558);
+}
+
+.page-header-overlay p {
+    color: white;
+}
+
+.page-header-action-buttons-container {
+    display: flex;
+    gap: 10px;
+}
+
+.page-header-action-buttons-container button {
+    padding: 10px 25px;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+}
+
+.button-primary {
+    color: white;
+    background-color: #389eda;
+    
+}
+
+.button-secondary {
+    color: #389eda;
+    background-color: white;
+}
+
+main {
+    padding: 80px;
+    flex: 1;
+}
+
+main .content-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+main .content-header h2 {
+    margin-bottom: 10px;
+}
+
+main .features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+main .features-container .features-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main .features-container .features-card header {
+    background-color: #389eda;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main .features-container .features-card header i {
+    color: white;
+}
+
+main .features-container .features-card h3 {
+    margin-bottom: 10px;
+}
+
+.page-footer {
+    background-color: #f3f2f3;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    justify-content: center;
+}
